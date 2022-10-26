@@ -1,4 +1,4 @@
-# CNEOS_NHATS_AsteroidComparison
+# CNEOS NHATS AsteroidComparison Chart
 
 Author: Charlie Hanner - 2022
 
