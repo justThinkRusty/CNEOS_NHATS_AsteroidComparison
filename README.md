@@ -16,13 +16,11 @@ This code was written in Python 3.10.7, and uses the following libraries:
 - time
 - alive_progress (if running the Demo file - the Silent file does not use this library)
 
-import requests  # For API string pull
-from matplotlib import pyplot  # Required for plotting
-import numpy as np  # is numpy
-from datetime import date  # File naming and displayed date of currency
-from PIL import Image  # For image manipulation
-import os  # For deleting intermittent image files
-import time  # For tracking time duration
-from alive_progress import alive_bar  # Creating a waitbar for to show progress during long API calls
+A set of local data files are required as well: 
+- PlanetaryData.txt
+- The CNEOS Pictures contains a few files that are needed for the final image stacking
 
-from PlanetaryData import *  # Pre-defined planetary data import from file
+## Use
+You should just be able to run either NHATS_Accessible_NEAs_DEMO.py or NHATS_Accessible_NEAs_Silent.py and it will generate the image. The demo file will show a progress bar and show the final image after it's generated, and the silent file will not. 
+
+The final image will be in the CNEOS Pictures folder, and will be named "NHATS_Accessible_NEAs_YYYY_MM_DD.png" where YYYYMMDD is the date the image was generated.

@@ -12,7 +12,7 @@ t = time.time()
 today = date.today()
 
 # Specify path for local machine to save intermittent and final graphs
-fullpath_spec = os.path.dirname(os.path.realpath(__file__)) + "/CNEOS Pictures/"
+fullpath_spec = os.path.dirname(os.path.realpath(__file__)) + "/CNEOS_Pictures/"
 
 
 # Font for internal graphing
