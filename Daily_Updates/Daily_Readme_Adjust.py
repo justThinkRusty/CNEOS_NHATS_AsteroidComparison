@@ -28,7 +28,10 @@ with open(high_path_spec + "Readme.md", "r") as f:
 # Find the line that contains the most recent date
 for i in range(len(lines)):
     if lines[i].startswith("![Generated Image](CNEOS_Pictures/CNEOS_AstCompare_"):
-        lines[i] = "![Generated Image](CNEOS_Pictures/CNEOS_AstCompare_" + most_recent_date + ".png"
+        lines[i] = "![Generated Image](CNEOS_Pictures/CNEOS_AstCompare_" + most_recent_date + ".png) \n " 
+        
+
+# print(lines)
 
 # Now write the new lines to the readme file
 with open(high_path_spec + "Readme.md", "w") as f:
