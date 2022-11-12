@@ -22,7 +22,7 @@ most_recent_date = most_recent_file[17:len(most_recent_file)-4]
 # print(most_recent_date)
 
 # Now open the readme file and adjust the most recent date
-with open(high_path_spec + "Readme.md", "r") as f:
+with open(high_path_spec + "README.md", "r") as f:
     lines = f.readlines()
 
 # Find the line that contains the most recent date
