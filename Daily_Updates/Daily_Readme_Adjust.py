@@ -30,17 +30,14 @@ for i in range(len(lines)):
     if lines[i].startswith("![Generated Image](CNEOS_Pictures/CNEOS_AstCompare_"):
         lines[i] = "![Generated Image](CNEOS_Pictures/CNEOS_AstCompare_" + most_recent_date + ".png) \n " 
         
-
-# print(lines)
-
-# Now write the new lines to the readme file
-with open(high_path_spec + "Readme.md", "w") as f:
+# Now write the new lines to the README file
+with open(high_path_spec + "README.md", "w") as f:
     f.writelines(lines)
 
-# Now delete all files that are older than the most recent file
-for i in range(len(file_list) - 1):
-    os.remove(fullpath_spec + file_list[i])
-
-
-
+# Now move all other "CNEOS_AstCompare_" files to the "Old_Charts" folder
+for i in range(len(file_list)-1):
+    # if filename contains "CNEOS_AstCompare_" and ends with ".png"
+    if file_list[i].startswith("CNEOS_AstCompare_") and file_list[i].endswith(".png"):
+        # move file to "Old_Charts" folder
+        os.rename(fullpath_spec + file_list[i], fullpath_spec + "Old_Charts/" + file_list[i])
 

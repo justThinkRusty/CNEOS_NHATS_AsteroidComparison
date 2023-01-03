@@ -16,25 +16,39 @@ today = date.today()
 fullpath_spec = os.path.dirname(os.path.realpath(__file__)) + "/CNEOS_Pictures/"
 
 # Font for internal graphing
-fontdict = {'family': 'Helvetica',
+# If on a Mac, use Helvetica
+# If on a PC, use Arial
+# If on Ubuntu use FreeSans
+
+if os.name == 'posix': # My ubuntu machine
+    font_name = 'FreeSans'
+elif os.name == 'nt': # PC
+    font_name = 'Arial'
+elif os.name == 'Darwin': #My Mac
+    font_name = 'Helvetica'
+else: 
+    # Ask user to specify font
+    font_name = input("Please specify the font name for your system (If on a Mac, use 'Helvetica', if on a PC, use 'Arial' and if on Ubuntu use 'F'reeSans'): ")
+
+fontdict = {'family': font_name,
             'weight': 'normal',
             'size': 7,
             }
 
 # Font for left side statistics
-fontdict2 = {'family': 'Helvetica',
+fontdict2 = {'family': font_name,
              'weight': 'normal',
              'size': 5,
              }
 
 # Font for data currency date
-fontdict3 = {'family': 'Helvetica',
+fontdict3 = {'family': font_name,
              'weight': 'normal',
              'size': 9,
              'color': '#ff9b00',
              }
 
-fontdict6 = {'family': 'Helvetica',
+fontdict6 = {'family': font_name,
              'weight': 'bold',
              'size': 5.75,
              }
