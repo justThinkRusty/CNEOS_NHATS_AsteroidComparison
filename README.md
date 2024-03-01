@@ -1,6 +1,6 @@
 # CNEOS NHATS AsteroidComparison Chart
 
-Author/Maintianer: Charlie Hanner - 2022
+Author/Maintianer: Charlie Hanner
 
 Please note: The network for this appears to be down for some reason. I will fix it in the next few weeks when I am in the same room as the server again! Please reach out to me if you want me to generate a plot for you! 
 
