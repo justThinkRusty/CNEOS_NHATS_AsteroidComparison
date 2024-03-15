@@ -22,7 +22,7 @@ This code was written in Python 3.10.7, and uses the following libraries:
 
 A set of local data files are required as well: 
 - PlanetaryData.txt
-- The CNEOS Pictures contains a few files that are needed for the final image stacking
+- The CNEOS Pictures folder contains a few files that are needed for the final image stacking
 
 ## Use
 You should just be able to run either NHATS_Accessible_NEAs_DEMO.py or NHATS_Accessible_NEAs_Silent.py and it will generate the image. The demo file will show a progress bar and show the final image after it's generated, and the silent file will not. 
