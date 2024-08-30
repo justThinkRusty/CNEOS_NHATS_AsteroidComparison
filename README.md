@@ -7,8 +7,8 @@ Please note: The network for this appears to be down for some reason. I will fix
 This is a repository for public release of the Python code generated for daily-creation of the comparison chart for human-accessible asteroids in the NHATS database. This project was staretd by Brent Barbee of NASA's Goddard Space Flight Center, and was created in Python by myself. The code is released under the CRAPL license (see LICENSE.md for details). I would like to make sure that the code I wrote is publically available, at least for the moment, for fellow engineers and enthusiasts.
 
 The latest image produced is:
-![Generated Image](CNEOS_Pictures/CNEOS_AstCompare_2024_8_29.png) 
-                                                                                                                                                                                                                                                                                                                                                                                   
+![Generated Image](CNEOS_Pictures/CNEOS_AstCompare_2024_8_30.png) 
+                                                                                                                                                                                                                                                                                                                                                                                    
 
 This code was written in Python 3.10.7, and uses the following libraries:
 - requests
