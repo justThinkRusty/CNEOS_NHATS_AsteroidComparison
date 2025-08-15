@@ -6,7 +6,7 @@ This is a repository for public release of the Python code generated for daily-c
 
 The latest image produced is:
 ![Generated Image](CNEOS_Pictures/CNEOS_AstCompare_2025_8_14.png) 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 This code was written in Python 3.10.7, and uses the following libraries:
 - requests
